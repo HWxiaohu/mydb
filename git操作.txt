@@ -59,7 +59,7 @@
 29、删除关联：git remove rm origin
 30、把本地仓库文件推到远程仓库，先把远程的拉过来：git pull origin master --allow-unrelated-histories
 31、然后执行：git push origin mster
-32、
+32、远程库，正常开发本地是没有库的，只能从远程克隆过来，命令：git clone SSH地址
 
 
 
