@@ -34,3 +34,33 @@
 就是从工作区把文件添加到缓存区，commit就是将缓存区文件放到版本区里
 20、git checkout -- 文件名 ：如果你没有add ，则会回到和你版本库的版本
 21、git checkout -- 文件名 ：如果你add到工作区了，然后修改，执行，则回到缓存区的版本
+
+
+22、放到git服务器上： ssh-keygen  -t  rsa  -C  "18827988799@qq.com"
+记住.ssh路径，窗口进入到这个目录
+23、命令行输入：cat id_rsa.pub，将内容复制出来，然后登录github官网，点击头像，进入settings，点击左边的SSH and GPG keys
+点击New SSH key，随便写一个title，将复制内容粘贴到key里面
+24、验证，命令行输入：ssh -T git@github.com，执行成功后刷新SSH keys页面，钥匙图标绿了则表示可用
+
+
+创建远程仓库
+
+
+25、在官网点击猫头像，点击New repostitory，创建一个名字，点击Create repostitory
+
+
+关联远程仓库
+
+
+26、点击猫头像，点击你想要关联的仓库，然后你可以看到一行有HTTPS SSH，后面是一个地址，
+我们点击SSH，把它后面的地址复制下来
+27、命令行窗口进入到本地仓库，cd 直接把你的仓库拖进来就行，执行
+28、命令行输入：git remote add origin 后面把你复制的地址粘贴过来，执行，没有任何提示表示成功
+29、删除关联：git remove rm origin
+30、
+
+
+
+
+
+
