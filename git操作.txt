@@ -1,0 +1,9 @@
+1、创建用户：git  config  --global  user.name  "HWxiaohu"
+2、邮箱： git config --global user.email "18827988799@qq.com"
+3、创建仓库：新建文件夹
+4、把文件夹拖进git
+5、执行命令： git init
+6、在文件夹中创建文件：只在仓库门口
+7、把文件送到仓库里面：git add hello.txt
+8、把文件送到仓库货架上：git commit -m   "第一次提交"（后面是提示信息）
+
