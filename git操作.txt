@@ -59,7 +59,11 @@
 29、删除关联：git remove rm origin
 30、把本地仓库文件推到远程仓库，先把远程的拉过来：git pull origin master --allow-unrelated-histories
 31、然后执行：git push origin mster
-32、远程库，正常开发本地是没有库的，只能从远程克隆过来，命令：git clone SSH地址
+32、远程库，正常开发本地是没有库的，只能从远程克隆过来，命令：git clone SSH地址   必须在当前已有的路径
+33、在本地库创建.gitignore 文件，命令为：touch .gitignore；然后把不想上传的文件名写在该文件里
+则上传时不会传已经写入的文件，添加所有：git add . ；commit所有：git commit * -m "解释内容"
+34、
+
 
 
 
