@@ -2,8 +2,35 @@
 2、邮箱： git config --global user.email "18827988799@qq.com"
 3、创建仓库：新建文件夹
 4、把文件夹拖进git
-5、执行命令： git init
+5、执行命令： git init  创建仓库
 6、在文件夹中创建文件：只在仓库门口
 7、把文件送到仓库里面：git add hello.txt
-8、把文件送到仓库货架上：git commit -m   "第一次提交"（后面是提示信息）
+8、把文件送到仓库货架上：git commit -m   "第一次提交"（后面是提示信息，可以不写）
+9、git status:查看仓库状态
+10、git diff:查看修改内容
+11、修改后需要再次执行 7和8
+12、git log:查看当前到最远的提交日志
+13、git log --pretty=oneline:只显示编号和信息
 
+
+版本回退
+
+
+14、git reset --hard HEAD^ ：回到上次版本
+15、git reset --hard HEAD^^:回到上上次版本
+16、git reset --hard HEAD~100:回到第前100次版本
+17、git reset --hard HEAD 版本号：回到某个版本（版本号可以只写5~6个）
+
+
+18、git reflog :记录每次命令
+
+
+
+工作区和版本区
+
+
+
+19、仓库目录下面有个.git 目录和工作区，.git 目录里面有缓存区和版本区，两者分开，add
+就是从工作区把文件添加到缓存区，commit就是将缓存区文件放到版本区里
+20、git checkout -- 文件名 ：如果你没有add ，则会回到和你版本库的版本
+21、git checkout -- 文件名 ：如果你add到工作区了，然后修改，执行，则回到缓存区的版本
