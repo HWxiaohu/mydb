@@ -57,7 +57,9 @@
 27、命令行窗口进入到本地仓库，cd 直接把你的仓库拖进来就行，执行
 28、命令行输入：git remote add origin 后面把你复制的地址粘贴过来，执行，没有任何提示表示成功
 29、删除关联：git remove rm origin
-30、
+30、把本地仓库文件推到远程仓库，先把远程的拉过来：git pull origin master --allow-unrelated-histories
+31、拉失败了可以推：git push origin mster
+32、
 
 
 
